@@ -7,26 +7,19 @@ df = pd.read_csv('data.csv', index_col=0)
 df = df.replace(np.nan, 0)
 df = df.dropna()
 
-weight = [go.Scatter(
+columns = [go.Scatter(
     x=df.index,
     y=df[col],
     mode='lines+markers',
     name=col) for col in df.columns]
 
-# TEST
-# workout_volume = [go.Scatter(
-#     x=df.index,
-#     y=df[col],
-#     mode='lines+markers',
-#     name=col) for col in df.columns]
-
-layout = go.Layout(title='WEIGHT STATISTICS',
+layout = go.Layout(title='TITLE',
                    xaxis=dict(title='TIME'),
-                   yaxis=dict(title='Weight properties'),
+                   yaxis=dict(title='AMOUNT'),
                    hovermode='closest')
 
-data = [*weight]
+data = [*columns]
 
 fig = go.Figure(data=data[0:], layout=layout)
 
-pyo.plot(fig, filename='weight_stats.html')
+pyo.plot(fig, filename='Graph.html')
