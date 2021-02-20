@@ -1,4 +1,4 @@
-# Simple_Graph
+# SimpleGraphProduce
 Simple graph
 
 Add / Remove / Rename columns within data.csv file with data if needed to reproduce it in a graph.
