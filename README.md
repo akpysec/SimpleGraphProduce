@@ -1,5 +1,7 @@
-# weight_graph
-Simple weight graph
+# Simple_Graph
+Simple graph
 
-Enter into data.csv file your progress & then run main.py
+Add / Remove / Rename columns within data.csv file with data if needed to reproduce it in a graph.
+
+Run main.py
 
